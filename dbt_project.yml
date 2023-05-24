@@ -8,6 +8,18 @@ models:
     +materialized: table
     intermediate:
       +materialized: view
+
+  version_2:
+    +schema: version_2
+    +materialized: table
+    intermediate:
+      +materialized: view
+
+  facebook_ads_drug:
+    +schema: facebook_ads_drug
+    +materialized: table
+    intermediate:
+      +materialized: view
 vars:
 
   facebook_ads_database: snowflake
