@@ -21,10 +21,6 @@ models:
     intermediate:
       +materialized: view
 vars:
-
-  facebook_ads_database: snowflake
-  facebook_ads_schema: version_2
-
   facebook_ads:
     account_history: "{{ ref('stg_facebook_ads__account_history') }}"
     ad_history: "{{ ref('stg_facebook_ads__ad_history') }}"
